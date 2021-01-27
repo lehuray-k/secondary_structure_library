@@ -9,7 +9,7 @@ The secondary_structure_overlay class generates the secondary structure overlay 
 The generate_stride_ss_file function will use the stride program (http://webclu.bio.wzw.tum.de/stride/) to generate a
     stride assignment file from an input pdb. Stride must be available and executable.
 
-The secondary_structure_assignment function reads a given stride file and resturns a list of lists
+The secondary_structure_assignment function reads a given stride file and returns a list of lists
     providing a list of all secondary structure segments, their structure class and residue start and end points.
 
 To use, import this script into your main program, or copy the class/functions as required.
