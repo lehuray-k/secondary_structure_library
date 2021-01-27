@@ -15,6 +15,7 @@ The secondary_structure_assignment function reads a given stride file and return
 To use, import this script into your main program, or copy the class/functions as required.
     See example_generation_of_histogram.py script for an example implementation.
 
+Happy plotting!
 - Kyle (27/01/21)
 """
 
