@@ -54,7 +54,7 @@ class secondary_structure_overlay:
     def find_ss_segments_and_generate_overlay(self):
         # find and plot secondary structure patches
         # NOTE: only strands and helices are recognised currently, everything else is considered 'unstructured'.
-        # We will
+        # We will:
         # 1. make a copy of the residue number list called residues_without_ss_assignment.
         # 2. loop over self.ss_segment_list and when a strand or helix is found we will call the appropriate method for
         #   generating the patch on ax and remove these residues from residues_without_ss_assignment.
