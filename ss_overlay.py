@@ -87,6 +87,7 @@ class secondary_structure_overlay:
 
     def add_strand_patch(self,strand_start,strand_end):
         # add patch to ax for a strand (uses mpatches FancyArrow)
+        # method adapted from https://gist.github.com/JoaoRodrigues/f9906b343d3acb38e39f2b982b02ecb0
         x_lims = plt.xlim()
         y_lims = plt.ylim()
         arrow_head_width = 0.1
@@ -98,6 +99,7 @@ class secondary_structure_overlay:
 
     def add_helix_patch(self,helix_start,helix_end):
         # add patch to ax for helix (uses several overlapping mpatches Arc objects)
+        # method adapted from https://gist.github.com/JoaoRodrigues/f9906b343d3acb38e39f2b982b02ecb0
         x_lims = plt.xlim()
         y_lims = plt.ylim()
         no_turns = 1
@@ -120,6 +122,7 @@ class secondary_structure_overlay:
 
     def add_rectangle_patch(self,start,length):
         # add thin rectangular patch (to create a line for unstructured regions)
+        # method adapted from https://gist.github.com/JoaoRodrigues/f9906b343d3acb38e39f2b982b02ecb0
         x_lims = plt.xlim()
         y_lims = plt.ylim()
         rectangle = mpatches.Rectangle((start-1,y_lims[1]+0.08),length,0.0001,linewidth=1,edgecolor='k',facecolor='None',clip_on=False)
