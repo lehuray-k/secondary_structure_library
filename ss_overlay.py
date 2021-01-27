@@ -96,7 +96,7 @@ class secondary_structure_overlay:
         self.add_rectangle_patch(strand_end,1)
 
     def add_helix_patch(self,helix_start,helix_end):
-        # add patch for figure for (uses several overlapping mpatches Arc objects)
+        # add patch to ax for helix (uses several overlapping mpatches Arc objects)
         x_lims = plt.xlim()
         y_lims = plt.ylim()
         no_turns = 1
